@@ -1,0 +1,8 @@
+# Keep the language stats focused on the actual source code.
+# The EDA notebook is large (embedded base64 output images) and would otherwise
+# dominate GitHub's language bar — treat it as documentation.
+analysis.ipynb linguist-documentation
+*.ipynb linguist-documentation
+
+# Don't count vendored/generated frontend config noise as code.
+frontend/*.config.* linguist-generated
